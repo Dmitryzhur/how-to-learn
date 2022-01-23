@@ -36,14 +36,25 @@ div {
 
 
 .page { }
-.header { }
+.header {
+  display: flex;
+}
 .logo { }
-.logo_place_header { }
+.logo_place_header {
+  height: 32px;
+  width: 183px;
+}
 .header__title { }
 .header__subtitle { }
 .header__link { }
-.header__main_illustrarion { }
-.header__square-pic { }
+.header__main_illustration {
+  height: 568px;
+  width: 568px;
+  background-image: url(/images/header-image.png);
+}
+.header__square-pic {
+  background-color: #00f;
+}
 .content { }
 .description { }
 .digits { }
