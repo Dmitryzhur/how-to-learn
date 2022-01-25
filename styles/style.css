@@ -1,5 +1,5 @@
 div {
-  border: 1px solid rgb(0, 225, 255);
+
 }
 
 .page {
@@ -18,47 +18,63 @@ div {
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
   display: flex;
-  flex-direction: column;
   position: relative;
+  border: 1px solid rgb(0, 225, 255);
+
 }
 
-/* Общий класс для двух логотипов */
-.logo {
-  font-weight: bold;
-}
-
-/*Данный блок должен быть слева сверху*/
-/*Позиционируйте элемент абсолютно + Следите, чтобы на малых
-разрешениях логотип был поверх других блоков.*/
 .logo_place_header {
-  margin: 30px 0 0 64px;
-  height: 32px;
+  border: 1px solid rgb(255, 0, 0);
   width: 183px;
-  z-index: 10;
+  height: 32px;
+  position: absolute;
+  margin: 30px 0 0 64px;
 }
 
-/*Данный блок должен быть слева посредние*/
-/*Используйте flex для вертикального центрирования элемента, а отступ
-  для смещения вправо. Следите, чтобы на малых разрешениях текст был
-  поверх других блоков. width: 730px. Отступ 64px
-  Высота строки 96px, размер шрифта 102px, начертание шрифта
-полужирное*/
 .header__title {
+  border: 1px solid rgb(255, 0, 0);
   max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  margin: 0 0 0 64px;
-  align-items: center;
   z-index: 1;
+  margin: 0 0 0 64px;
+  align-self: center;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__subtitle {
+  border: 1px solid rgb(255, 0, 0);
+  max-width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  align-self: flex-end;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+}
+
+.header__main-illustration {
+  justify-self: self-end;
+  border: 1px solid rgb(255, 0, 0);
+  width: 765px;
+  height: 608px;
+  margin: 0 0 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  z-index: -1;
+  background-color: #2f80ed;
+  align-self: center;
+  justify-content: center;
+  right: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -67,36 +83,6 @@ div {
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-/*Данный блок должен быть слева снизу*/
-.header__subtitle {
-  line-height: 25px;
-  width: 388px;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0 0 30px 64px;
-}
-
-/*Данный блок должен быть справа снизу
-Переделать в HTML под IMG
-Позиционируйте элемент абсолютно. Прижмите его к правому
-нижнему краю блока header. При использовании картинок, не
-забывайте обязательный атрибут alt*/
-.header__main_illustration {
-  height: 765px;
-  width: 608px;
-  margin: 0 0 0 auto;
-}
-
-/*Данный блок должен быть справа посередине
-Позиционируйте элемент абсолютно. Он должен быть прижат к
-правому краю и отступать сверху от границы блока header*/
-.header__square-pic {
-  background-color: #2f80ed;
-  height: 568px;
-  width: 568px;
-
 }
 
 .content { }
