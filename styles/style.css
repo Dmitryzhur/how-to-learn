@@ -1,3 +1,7 @@
+div {
+  border: 1px solid rgb(0, 225, 255);
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -14,6 +18,41 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Общий класс для двух логотипов */
+.logo {
+  font-weight: bold;
+}
+
+/*Данный блок должен быть слева сверху*/
+/*Позиционируйте элемент абсолютно + Следите, чтобы на малых
+разрешениях логотип был поверх других блоков.*/
+.logo_place_header {
+  margin: 30px 0 0 64px;
+  height: 32px;
+  width: 183px;
+  z-index: 10;
+}
+
+/*Данный блок должен быть слева посредние*/
+/*Используйте flex для вертикального центрирования элемента, а отступ
+  для смещения вправо. Следите, чтобы на малых разрешениях текст был
+  поверх других блоков. width: 730px. Отступ 64px
+  Высота строки 96px, размер шрифта 102px, начертание шрифта
+полужирное*/
+.header__title {
+  max-width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  margin: 0 0 0 64px;
+  align-items: center;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -30,34 +69,47 @@
   margin-top: 80px;
 }
 
-div {
-  border: 1px solid red;
+/*Данный блок должен быть слева снизу*/
+.header__subtitle {
+  line-height: 25px;
+  width: 388px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 30px 64px;
 }
 
-
-.page { }
-.header {
-  display: flex;
-}
-.logo { }
-.logo_place_header {
-  height: 32px;
-  width: 183px;
-}
-.header__title { }
-.header__subtitle { }
-.header__link { }
+/*Данный блок должен быть справа снизу
+Переделать в HTML под IMG
+Позиционируйте элемент абсолютно. Прижмите его к правому
+нижнему краю блока header. При использовании картинок, не
+забывайте обязательный атрибут alt*/
 .header__main_illustration {
+  height: 765px;
+  width: 608px;
+  margin: 0 0 0 auto;
+}
+
+/*Данный блок должен быть справа посередине
+Позиционируйте элемент абсолютно. Он должен быть прижат к
+правому краю и отступать сверху от границы блока header*/
+.header__square-pic {
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
-  background-image: url(/images/header-image.png);
+
 }
-.header__square-pic {
-  background-color: #00f;
-}
+
 .content { }
+
 .description { }
+
 .digits { }
+
 .feynman { }
+
 .kaufman { }
-.footer { }
+
+.footer {
+  display: flex;
+ }
+
