@@ -47,7 +47,7 @@
         <h1 class="section-title digits__section-title">Цифры и факты</h1>
         <h2 class="section-subtitle digits__section-subtitle">Про учёбу и мозг</h2>
         <ul class="table digits__table">
-          <li class="table__cell">
+          <li class="table__cell ">
             <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
           </li>
@@ -135,31 +135,48 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <div class="kaufman__triangle"><img src="./images/kaufman-triangle.svg" alt="Треугольник"></div>
+        <div class="kaufman__triangle"></div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__columns_content_copyright">
-          <div class="logo logo_place_footer"></div>
-          <div class="footer__author">© 2022, Дмитрий Журавлев</div>
+          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип Яндекс Практикум">
+          <div class="footer__author">&copy 2022. Дмитрий Журавлев</div>
         </div>
-        <div class="footer__columns_content_info">
-          <h6 class="footer__column-heading">О практикуме</h6>
-            <div class="footer__column-links">
-              <p>Главная</p>
-              <p>Концепция</p>
-              <p>Наставники</p>
-            </div>
+        <div class="footer__columns_content_info"> <!--Контейнер навигации-->
+          <h3 class="footer__column-heading">О практикуме</h3>
+          <ul class="footer__column-links">
+            <li>
+              <a href="#" class="footer__column_content_link">Главная</a>
+            </li>
+            <li>
+              <a href="#" class="footer__column_content_link">Концепция</a>
+            </li>
+            <li>
+              <a href="#" class="footer__column_content_link">Наставники</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__column-link"></div>
-        <div class="footer__columns_content_social">
-          <h6 class="footer__column-heading">Соцсети</h6>
-          <div class="footer__column-links footer__social-icon">
-            <p>Facebook</p>
-            <p>ВКонтакте</p>
-            <p>Instagram</p>
-          </div>
+        <div class="footer__columns_content_social"> <!--Контейнер соцсетей-->
+          <h3 class="footer__column-heading">Соцсети</h3>
+          <ul class="footer__column-links">
+            <li>
+              <a href="#" class="footer__column_content_link">
+                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Значок Фэйсбук">
+              Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="footer__column_content_link">
+                <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Значок ВКонтакте">
+              ВКонтакте</a>
+            </li>
+            <li>
+              <a href="#" class="footer__column_content_link">
+                <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Занчок Инстаграм">
+              Instagram</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
