@@ -1,10 +1,33 @@
 .kaufman__triangle {
   width: 877px;
   height: 877px;
-  background-image: url(../images/kaufman-triangle.svg);
+  background-image: url(../../../images/kaufman-triangle.svg);
   background-size: 100%;
   position: absolute;
   top: 0;
   right: -210px;
   z-index: 0;
+}
+
+/*Перенести в необходимую папку по БЭМ
+1 Реализуйте анимацию: поворот с равномерной скоростью по часовой
+стрелке. Фигура поворачивается на 360 ̊ за 20 секунд и двигается
+бесконечно. Создайте отдельный БЭМ-блок rotation в файловой
+структуре. Используйте микс, чтобы запустить анимацию там, где
+нужно.
+
+2 Сделайте так, чтобы квадрат при повороте не переполнял
+родительский блок
+*/
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+.kaufman__triangle {
+animation: rotation 20s linear infinite;
 }

@@ -51,3 +51,15 @@
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__item/cards__item.css);
 @import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__section-subtitle/video__section-subtitle.css);
+@import url(../blocks/video/__section-title/video__section-title.css);
+@import url(../blocks/oakley/oakley.css);
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/resources/__logo/resources__logo.css);
+@import url(../blocks/resources/__section-subtitle/resources__section-subtitle.css);
+@import url(../blocks/resources/__section-title/resources__section-title.css);
+

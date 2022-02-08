@@ -1,8 +1,8 @@
-.digits {
+.resources {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin: 100px 0 100px 0;
+  margin: 100px 0 217px 0;
   padding: 0;
 }
