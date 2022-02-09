@@ -7,24 +7,5 @@
   top: 0;
   right: -210px;
   z-index: 0;
-}
-
-/*Перенести в необходимую папку по БЭМ
-1 Реализуйте анимацию: поворот с равномерной скоростью по часовой
-стрелке. Фигура поворачивается на 360 ̊ за 20 секунд и двигается
-бесконечно. Создайте отдельный БЭМ-блок rotation в файловой
-структуре. Используйте микс, чтобы запустить анимацию там, где
-нужно.
-*/
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(360deg);
-}
-}
-
-.kaufman__triangle {
-animation: rotation 20s linear infinite;
+  animation: rotation 20s linear infinite;
 }
